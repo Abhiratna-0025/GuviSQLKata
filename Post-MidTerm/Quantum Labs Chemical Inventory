@@ -1,1 +1,5 @@
+Q1 )  select * from chemical_inventory where hazard_level =="High";
 
+Q2) select storage_room , sum(quantity_liters) from chemical_inventory group by storage_room;
+
+Q3) SELECT * FROM chemical_inventory ORDER BY quantity_liters DESC;
