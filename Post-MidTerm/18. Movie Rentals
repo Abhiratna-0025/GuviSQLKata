@@ -1,0 +1,10 @@
+Q1. SELECT * FROM movies WHERE available_copies>0;
+
+Q2. UPDATE movies SET available_copies = available_copies + 3 WHERE title = 'The Dark Knight';
+
+Q3. INSERT INTO movies (id, title, genre, rental_price, available_copies) VALUES (4, 'Interstellar', 'Sci-Fi', 55.00, 8);
+
+Q4. SELECT title FROM movies 
+    WHERE rental_price = (SELECT MIN(rental_price) FROM movies);
+
+Q5. SELECT SUM(rental_price * available_copies) AS total_rental_value FROM movies;
