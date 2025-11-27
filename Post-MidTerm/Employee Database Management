@@ -8,4 +8,6 @@ Q3. DELETE FROM employees WHERE name = 'Pooja Verma';
 
 Q4. SELECT SUM(salary) FROM employees;
 
-Q5. (will be posting soon)
+Q5. INSERT INTO employees (id, name, position, salary, department) 
+    VALUES (4, 'Rakesh Iyer', 'Intern', 35000, 'Marketing');
+    SELECT * FROM employees WHERE id = 4;
