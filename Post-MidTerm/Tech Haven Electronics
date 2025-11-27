@@ -1,0 +1,10 @@
+Q1. SELECT * FROM gadgets;
+
+Q2. UPDATE gadgets SET stock = stock - 5 WHERE name = 'Smartphone';
+
+Q3. INSERT INTO gadgets (id, name, category, price, stock) VALUES (4, 'Smartwatch', 'Wearable', 10000, 100);
+
+Q4. SELECT AVG(price) FROM gadgets;
+
+Q5. UPDATE gadgets SET price = price * 0.95; 
+    SELECT * FROM gadgets;
