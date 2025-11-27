@@ -1,0 +1,5 @@
+Q1. select * from crop_yield where harvest_date >'2025-04-01';
+
+Q2. select crop_name,avg(yield_tons) from crop_yield  group by crop_name;
+
+Q3. select * from crop_yield order by yield_tons desc limit 2;
