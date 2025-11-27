@@ -1,0 +1,11 @@
+Q1. SELECT * FROM books;
+
+Q2. UPDATE books SET available_copies = available_copies + 2 WHERE title = 'To Kill a Mockingbird';
+
+Q3. INSERT INTO books (id, title, author, genre, publication_year, available_copies)
+    VALUES (4, 'Moby Dick', 'Herman Melville', 'Classic', 1851, 8);
+
+Q4. SELECT title FROM books ORDER BY publication_year DESC LIMIT 1;
+
+Q5. SELECT SUM(available_copies) AS total_available_copies FROM books;
+
