@@ -1,0 +1,3 @@
+Q1. select * from water_shipments where quantity>500;
+
+Q2. select city ,sum(quantity) from water_shipments group by city;
