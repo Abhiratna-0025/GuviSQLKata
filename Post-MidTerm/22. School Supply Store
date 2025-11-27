@@ -1,0 +1,10 @@
+Q1. select * from supplies where category='Writing';
+
+Q2. select category , sum(stock) as total_number from supplies group by category;
+
+Q3. update supplies set stock =90 where item_name='Markers';
+    select * from supplies where item_name='Markers';
+
+Q4. select sum(price*stock) as total_value from supplies;
+
+Q5. delete from supplies where item_name='Pens';
