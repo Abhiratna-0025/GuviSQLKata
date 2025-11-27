@@ -1,0 +1,10 @@
+Q1. select * from produce where category ='Vegetable';
+
+Q2. select category , sum(quantity) as total_number from produce group by category;
+
+Q3. update produce set price =45 where item_name='Carrots' ;
+    select * from produce where category='Vegetable';
+
+Q4. select avg(price) from produce;
+
+Q5. delete from produce where item_name='Potatoes';
