@@ -1,0 +1,5 @@
+Q1. SELECT * FROM flight_schedules WHERE seats_available > 100;
+
+Q2. SELECT departure_city, SUM(seats_available) FROM flight_schedules GROUP BY departure_city;
+
+Q3. SELECT departure_city, SUM(seats_available) FROM flight_schedules GROUP BY departure_city ORDER BY SUM(seats_available) DESC LIMIT 1;
