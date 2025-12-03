@@ -1,0 +1,9 @@
+Q1. SELECT SUM(fare) FROM rides WHERE ride_date = '2024-09-11';
+
+Q2. SELECT cab_model, AVG(fare) FROM rides GROUP BY cab_model;
+
+Q3. SELECT MAX(fare) FROM rides WHERE user_name = 'Ravi Kumar';
+
+Q4. SELECT cab_model FROM rides GROUP BY cab_model ORDER BY SUM(fare) DESC LIMIT 1;
+
+Q5. SELECT DISTINCT user_name FROM rides GROUP BY user_name HAVING COUNT(DISTINCT ride_date) > 1;
