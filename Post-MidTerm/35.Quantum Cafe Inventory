@@ -1,0 +1,11 @@
+1. select category,sum(price*quantity) as total_inventory_value from cafe_inventory 
+group by category;
+
+2.select item_name, price from cafe_inventory 
+where price=(select max(price) from cafe_inventory);
+
+
+3.select item_name,price*quantity as total_value from cafe_inventory 
+
+order by price*quantity desc
+limit 2;
