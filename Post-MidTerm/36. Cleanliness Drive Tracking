@@ -1,0 +1,10 @@
+Q1. select * from volunteers where hours_contributed>4;
+
+Q2. select * from cleanliness_drives where location='Riverbank';
+
+Q3. select * from cleanliness_drives where location='Central Park';
+
+Q4. SELECT d.drive_name, COUNT(v.id) AS total_volunteers FROM cleanliness_drives d
+LEFT JOIN volunteers v
+ON d.id = v.drive_id
+GROUP BY d.drive_name;
