@@ -1,0 +1,11 @@
+Q1. SELECT f.flight_number, SUM(b.seats_reserved) AS total_seats_reserved FROM flights f JOIN bookings b ON f.id = b.flight_id GROUP BY f.flight_number;
+
+Q2. SELECT flight_number, departure_time FROM flights WHERE origin = 'Mumbai' AND DATE(departure_time) = '2024-09-10';
+
+Q3. SELECT f.flight_number, SUM(b.seats_reserved) AS reserved_seats FROM flights f JOIN bookings b ON f.id = b.flight_id GROUP BY f.flight_number
+    ORDER BY reserved_seats DESC LIMIT 1;
+
+Q4. UPDATE flights SET departure_time = '2024-09-12 17:00:00' WHERE flight_number = 'AI204';
+    SELECT * FROM flights WHERE flight_number = 'AI204';
+
+Q5. select passenger_name from flights f join bookings b on f.id = b.flight_id where destination='Banglore' and departure_time='2024-09-11 15:00:00';
