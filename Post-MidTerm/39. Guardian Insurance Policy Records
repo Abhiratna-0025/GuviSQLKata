@@ -1,0 +1,6 @@
+Q1. SELECT policy_id, holder_name, policy_type, premium_amount, 
+    RANK() OVER (PARTITION BY policy_type ORDER BY premium_amount DESC) AS rank_in_type FROM insurance_policies;
+
+Q2. SELECT policy_type, SUM(premium_amount) AS total_premium, AVG(premium_amount) AS avg_premium,
+    ROUND((SUM(premium_amount) / (SELECT SUM(premium_amount) FROM insurance_policies)) * 100, 2) AS percentage_of_total FROM insurance_policies
+    GROUP BY policy_type;

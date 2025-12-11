@@ -1,0 +1,7 @@
+Q1. SELECT species_name, habitat_tank, feeding_time, RANK() OVER (ORDER BY feeding_time ASC) AS feeding_rank FROM marine_animals WHERE caretaker_name = 'Rajesh';
+
+Q2. SELECT habitat_tank, COUNT(*) AS number_of_animals, ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM marine_animals), 2) AS percentage_of_total
+    FROM marine_animals GROUP BY habitat_tank ORDER BY habitat_tank;
+
+Q3. SELECT species_name, feeding_time, (CAST(strftime('%H', feeding_time) AS INTEGER) + CAST(strftime('%M', feeding_time) AS INTEGER) / 60.0) AS feeding_time_in_hours
+    FROM marine_animals WHERE feeding_time>'18:00:00'

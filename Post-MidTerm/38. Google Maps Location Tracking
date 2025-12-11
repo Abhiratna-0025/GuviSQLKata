@@ -1,0 +1,7 @@
+Q1. SELECT L.location_name FROM user_checkins AS C JOIN locations AS L On location_id = L.id WHERE C.user_id = 101;
+
+Q2. select user_id from user_checkins u join locations l on u.location_id=l.id where l.location_name='Bookstore';
+
+Q3. SELECT L.location_name FROM locations L LEFT JOIN user_checkins C ON L.id = C.location_id WHERE C.location_id IS NULL;
+
+Q4. SELECT l.location_name, COUNT(uc.user_id) FROM locations l JOIN user_checkins uc ON l.id = uc.location_id GROUP BY l.location_name;

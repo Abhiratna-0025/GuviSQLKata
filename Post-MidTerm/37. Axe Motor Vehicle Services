@@ -1,0 +1,5 @@
+Q1. SELECT * FROM vehicle_service WHERE service_type = 'Full Service' AND service_date BETWEEN '2025-08-01' AND '2025-08-07' ORDER BY service_date DESC
+
+Q2. SELECT service_type, COUNT(*) as total_count, ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 2) as percentage FROM vehicle_service GROUP BY service_type;
+
+Q3.
