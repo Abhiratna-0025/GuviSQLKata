@@ -1,0 +1,13 @@
+1. select * from tech_startups where founded_year<2010;
+
+2. select startup_name from tech_startups 
+where founded_year=(select max(founded_year) from tech_startups)
+
+3. select * from tech_startups 
+where industry='E-commerce'
+
+4. select * from tech_startups 
+order by Length(startup_name) desc limit 1;
+
+5.  select count(headquarters) from tech_startups 
+where headquarters='San Francisco, CA'
