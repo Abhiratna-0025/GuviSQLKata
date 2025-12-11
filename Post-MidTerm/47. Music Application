@@ -1,0 +1,7 @@
+1.> select * from music_playlists where number_of_songs>30;
+
+2.>  select * from music_playlists where total_duration=(select max(total_duration) from music_playlists)
+
+3.>  select * from music_playlists where created_by='Charlie'
+
+4.>  select avg(number_of_songs) from music_playlists;
