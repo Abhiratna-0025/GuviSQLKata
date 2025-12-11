@@ -10,6 +10,6 @@ Maintainer & Project Owner
 
 ## 👥 Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=abhaypratap08/GuviSQLKata)](https://github.com/abhaypratap08/GuviSQLKata/graphs/contributors)
+[![Contributors](https://abhaypratap08/GuviSQLKata)](https://github.com/abhaypratap08/GuviSQLKata/graphs/contributors)
 
 ✨ *Big thanks to all contributors!* ✨
