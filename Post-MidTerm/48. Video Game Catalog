@@ -1,4 +1,4 @@
-Q1. FROM video_games WHERE release_date >= '2021-01-01';
+Q1. Select * FROM video_games WHERE release_date >= '2021-01-01';
 
 Q2. select count(*) from video_games where platform ='PC';
 
