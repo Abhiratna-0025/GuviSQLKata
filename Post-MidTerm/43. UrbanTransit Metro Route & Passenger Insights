@@ -1,0 +1,27 @@
+Q1. SELECT 
+    route_id,
+    route_name,
+    stations_covered,
+    daily_passengers,
+    ROUND(daily_passengers / stations_covered, 2) AS avg_passengers_per_station
+FROM metro_routes
+WHERE stations_covered > 10;
+
+Q2.SELECT 
+    route_name,
+    daily_passengers,
+    ROUND(
+        (daily_passengers / (SELECT SUM(daily_passengers) FROM metro_routes)) * 100,
+        2
+    ) AS percentage_contribution
+FROM metro_routes;
+
+Q3.SELECT 
+    route_id,
+    route_name,
+    travel_time_minutes,
+    daily_passengers,
+    ROUND(daily_passengers / travel_time_minutes, 2) AS efficiency
+FROM metro_routes
+WHERE travel_time_minutes < 30
+ORDER BY efficiency DESC;
