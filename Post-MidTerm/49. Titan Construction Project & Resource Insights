@@ -3,4 +3,8 @@ Q1. SELECT cp.project_name, cp.budget, pe.engineer_name, pe.role FROM construcTI
 
 Q2. SELECT AVG(budget) construcTIon_projects FROM construction_projects;
 
-Q3.
+Q3.BEGIN TRANSACTION;
+UPDATE construction_projects
+SET budget = 250000000
+WHERE project_id = 1;
+ROLLBACK;
